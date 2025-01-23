@@ -5,7 +5,8 @@
             {"Hotel_name": "Zagazi", "Opens":"02/09/2025", "Closes":"30/12/2025"}
         ],
         "Venus":[
-
+            {"Hotel_name": "Best Western", "Opens":"03/08/2025", "Closes":"31/12/2025"},
+            {"Hotel_name": "Bates Motel", "Opens":"31/02/2026", "Closes":"31/12/2026"}
         ],
         "Earth":[
 
