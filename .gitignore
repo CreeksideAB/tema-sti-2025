@@ -43,6 +43,7 @@ sdkconfig.old
 
 # Built Visual Studio Code Extensions
 *.vsix
+/.vs
 
 ### VisualStudioCode Patch ###
 # Ignore all local history of files
