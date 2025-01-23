@@ -9,6 +9,9 @@ EventGroupHandle_t mqtt_event_group;
 
 void app_main(void)
 {
+<<<<<<< HEAD
+       
+=======
     wifi_event_group = xEventGroupCreate();
     mqtt_event_group = xEventGroupCreate();
     init_wifi(wifi_event_group);
@@ -18,4 +21,5 @@ void app_main(void)
 
     // Kalla på "start_task_<namn>" här, 1 rad per grupp
     // EXAMPLE: start_task_group1();
+>>>>>>> 26802b6ce6c836f106a0302c9164e2eea4a59f39
 }
