@@ -27,7 +27,7 @@ static void mqtt_event_handler(void *handler_args, esp_event_base_t base, int32_
     case MQTT_EVENT_DISCONNECTED:
         ESP_LOGI(TAG, "MQTT disconnected");
         xEventGroupClearBits(mqtt_event_group, MQTT_CONNECTED_BIT);
-        if (reconnect_counter < 5)
+        if (reconnect_counter < 30)
         {
             reconnect_counter++;
             ESP_LOGI(TAG, "Trying to reconnect to MQTT");
