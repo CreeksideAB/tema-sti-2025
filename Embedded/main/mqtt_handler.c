@@ -15,6 +15,9 @@ static void mqtt_event_handler(void *handler_args, esp_event_base_t base, int32_
     esp_mqtt_client_handle_t client = event->client;
     switch (event_id)
     {
+
+// /bokning/uplink
+// /bokning/downlink
     case MQTT_EVENT_CONNECTED:
         ESP_LOGI(TAG, "MQTT connected");
         xEventGroupSetBits(mqtt_event_group, MQTT_CONNECTED_BIT);

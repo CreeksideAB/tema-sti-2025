@@ -3,6 +3,7 @@
 #include "mqtt_handler.h"
 #include "freertos/FreeRTOS.h"
 #include "freertos/event_groups.h"
+#include "bekrafta-bokning/bekrafta_bokning.h"
 
 EventGroupHandle_t wifi_event_group;
 EventGroupHandle_t mqtt_event_group;

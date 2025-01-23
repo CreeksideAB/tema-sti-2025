@@ -27,7 +27,7 @@ static void wifi_event_handler(void *arg, esp_event_base_t event_base, int32_t e
     case WIFI_EVENT_STA_DISCONNECTED:
         ESP_LOGI(TAG, "WiFi disconnected");
         xEventGroupClearBits(wifi_event_group, WIFI_CONNECTED_BIT);
-        if (reconnect_counter < 5)
+        if (reconnect_counter < 30)
         {
             reconnect_counter++;
             ESP_LOGI(TAG, "Trying to reconnect to WiFi");
