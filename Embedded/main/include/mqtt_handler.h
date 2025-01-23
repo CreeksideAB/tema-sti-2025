@@ -8,4 +8,6 @@
 
 void init_mqtt();
 
+void send_data_to_mqtt(char* data);
+
 #endif

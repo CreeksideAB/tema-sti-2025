@@ -40,7 +40,6 @@ static void mqtt_event_handler(void *handler_args, esp_event_base_t base, int32_
         break;
     case MQTT_EVENT_SUBSCRIBED:
         ESP_LOGI(TAG, "MQTT subscribed");
-        
         break;
     case MQTT_EVENT_DATA:
         ESP_LOGI(TAG, "MQTT data received");
@@ -48,6 +47,19 @@ static void mqtt_event_handler(void *handler_args, esp_event_base_t base, int32_
     default:
         break;
     }
+}
+
+send_data_to_mqtt(char* data)
+{
+    if(esp_mqtt_client_publish(client, "/DB", data, 0, 2, 1))
+    {
+        ESP_LOGI(TAG, "Data sent to MQTT %s", data);
+    }
+    else
+    {
+        ESP_LOGI(TAG, "Failed to send data to MQTT");
+    }
+    
 }
 
 void init_mqtt(EventGroupHandle_t mqtt_event_group)
