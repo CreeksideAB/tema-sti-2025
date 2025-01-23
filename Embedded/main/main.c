@@ -3,6 +3,7 @@
 #include "mqtt_handler.h"
 #include "freertos/FreeRTOS.h"
 #include "freertos/event_groups.h"
+#include "boking_3.h"
 
 EventGroupHandle_t wifi_event_group;
 EventGroupHandle_t mqtt_event_group;
@@ -18,5 +19,6 @@ void app_main(void)
 
     // Kalla på "start_task_<namn>" här, 1 rad per grupp
     // EXAMPLE: start_task_group1();
-    
+    start_task_group3();
+
 }
