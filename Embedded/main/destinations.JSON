@@ -1,5 +1,5 @@
 {
-    "Plantes": {
+    "Planets": {
         "Mercury":[
             {"Hotel_name": "Scandic", "Opens":"01/05/2025", "Closes":"09/05/2025"},
             {"Hotel_name": "Zagazi", "Opens":"02/09/2025", "Closes":"30/12/2025"}
