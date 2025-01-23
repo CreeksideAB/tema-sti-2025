@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include "wifi_handler.h"
 #include "mqtt_handler.h"
+#include "show_destinations.h"
 #include "freertos/FreeRTOS.h"
 #include "freertos/event_groups.h"
 

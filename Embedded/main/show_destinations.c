@@ -3,6 +3,8 @@
 #include "freertos/task.h"
 #include "cJSON.h"
 
+extern void start_task_group1();
+extern void check_availability(char* json_input);
 
 // Funktion för att läsa en fil till en buffer
 char *read_file(const char *filename) {
@@ -42,7 +44,7 @@ void show_destinations_task(void *pvParameters) {
     
 
     while (1) {
-        vTaskDelay(pdMS_TO_TICKS(1000));
+        vTaskDelay(1000);
     }
     vTaskDelete(NULL);
 }

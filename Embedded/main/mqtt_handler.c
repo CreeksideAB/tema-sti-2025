@@ -2,11 +2,11 @@
 #include "mqtt_client.h"
 #include "esp_log.h"
 #include "cJSON.h"
+#include "show_destinations.h"
 
 #define TAG "mqtt_handler"
 #define BROKER_URL "mqtt://broker.emqx.io:1883"
 
-extern void check_availability(char* json_input);
 static int reconnect_counter = 0;
 esp_mqtt_client_handle_t client;
 

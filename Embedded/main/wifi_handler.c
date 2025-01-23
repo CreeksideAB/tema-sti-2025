@@ -7,6 +7,7 @@
 #include "nvs_flash.h"
 #include "lwip/sockets.h"
 #include "lwip/sys.h"
+#include "show_destinations.h"
 
 #define TAG "wifi_handler"
 
