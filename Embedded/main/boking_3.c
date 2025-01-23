@@ -1,7 +1,7 @@
 #include "boking_3.h"
-#include <freeRTOS.h>
+#include <freeRTOS./FreeRTOS.h>
 #include <freertos/task.h>
-#include <event_groups.h>
+#include <freeRTOS/event_groups.h>
 
 void start_task_group3()
 {
