@@ -19,7 +19,9 @@ void task_group3(void* params)
     // send message to mqtt
     //TODO FIX DATABASE
     while(true){
-        send_data_to_mqtt("Hello from task 3");
+        for(int i = 0; i < 4; i++){
+            send_data_to_mqtt(DB);
+        }
         vTaskDelay(pdMS_TO_TICKS(5000));
     }   
 }
