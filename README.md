@@ -1,5 +1,0 @@
-###  RYMDEN SÅ COOL!
-
-
-# MQTT TOPICS
-
