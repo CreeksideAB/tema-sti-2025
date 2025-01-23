@@ -1,17 +1,11 @@
 {
     "Planets": {
-        "Mercury":[
-        ],
-        "Venus":[
-        ],
-        "Earth":[
-        ],
-        "Mars":[
-        ],
-        "Jupiter":[
-        ],
-        "Saturn":[
-        ],
+        "Mercury":"Open",
+        "Venus":"Open",
+        "Earth":"Open",
+        "Mars":"Open",
+        "Jupiter":"Open",
+        "Saturn": "Open",
         "Uranus": "Open",
         "Neptune": "Open"
     }
