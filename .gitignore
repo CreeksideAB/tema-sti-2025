@@ -4,7 +4,20 @@
 
 build/
 .vscode
+<<<<<<< HEAD
 
+=======
+.devcontainer
+
+sdkconfig
+sdkconfig.old
+
+*.elf
+*.map
+*.bin
+*.out
+*.log
+>>>>>>> main
 
 ### Git ###
 # Created by git for backups. To disable backups in Git:
